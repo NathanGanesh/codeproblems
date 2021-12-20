@@ -6,11 +6,11 @@ public class SnapShot {
     private ArrayList<Integer> data;
 
     public SnapShot(ArrayList<Integer> data) {
-        this.data = data;
+        this.data = new ArrayList<>(data);
     }
 
     public ArrayList<Integer> restore() {
-        return this.data;
+        return new ArrayList<>(this.data);
     }
 
     public static void main(String[] args) {
